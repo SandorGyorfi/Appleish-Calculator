@@ -13,7 +13,7 @@ button {
     padding: 16px 0;
     transition: all 0.3s;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     background: linear-gradient(145deg, #f3f3f3, #ffffff);
 }
 
@@ -59,13 +59,16 @@ button[data-type="function"] {
 }
 
 #calculator-container {
-    border: 1px solid #e0e0e0;
+    border: 3px solid rgba(255, 255, 255, 0.15);
     border-radius: 28px;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);  
     padding: 25px;
     max-width: 85%;
     margin: 30px auto;
+    background: linear-gradient(135deg, #aeaeae, #707070); 
+    color: #333;  
 }
+
 
 @media (min-width: 600px) {
     #buttons {
