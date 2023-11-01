@@ -1,0 +1,17 @@
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-top: 20px;
+}
+
+button[data-type="number"], 
+button[data-type="action"], 
+button[data-type="operation"] {
+    background-color: #e0e0e0;
+}
+
+button[data-type="operation"] {
+    background-color: #ff9500;
+    color: white;
+}
