@@ -40,3 +40,31 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateDisplay() {
         display.textContent = currentInput || '0';
     }
+
+    function computeResult() {
+        if (previousInput && currentInput && currentOperation) {
+            const num1 = parseFloat(previousInput);
+            const num2 = parseFloat(currentInput);
+            let result;
+
+            switch (currentOperation) {
+                case '+':
+                    result = num1 + num2;
+                    break;
+                case '-':
+                    result = num1 - num2;
+                    break;
+                case '*':
+                    result = num1 * num2;
+                    break;
+                case '/':
+                    result = num1 / num2;
+                    break;
+            }
+
+            currentInput = result.toString();
+            previousInput = "";
+            currentOperation = null;
+        }
+    }
+});
